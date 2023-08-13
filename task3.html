@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.3em;
+            line-height: 1.2em;
+            background-color: darkseagreen;
+        }
+
+        header,
+        .add-new,
+        .list,
+        .btn-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            padding: 40px;
+        }
+
+        .insert-text,
+        .add-btn,
+        .delete-btn {
+            padding: 10px;
+            margin: 20px;
+            width: 20%;
+            border-radius: 5px;
+            border: none;
+
+        }
+
+        .add-btn,
+        .delete-btn {
+            width: 10%;
+            font-size: 15px;
+        }
+
+        .plans {
+            margin: 20px;
+        }
+
+        li {
+            list-style-type: none;
+            margin: 20px;
+        }
+
+        .list {
+            background-color: rgb(86, 115, 86);
+            width: 50%;
+            margin: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>TO DO LIST</h1>
+        <p>Write your plans here:</p>
+    </header>
+    <div class="to-do">
+        <div class="add-new">
+            <input type="text" class="insert-text" placeholder="Enter your task...">
+            <button class="add-btn">Add</button>
+        </div>
+        <div class="list">
+            <p class="plans">My plans for today:</p>
+            <ul class="tasks">
+                <li>task 1</li>
+                <li>task 2</li>
+                <li>task 3</li>
+                <li>task 4</li>
+                <li>task 5</li>
+            </ul>
+        </div>
+        <div class="btn-wrap">
+            <button class="delete-btn">Delete</button>
+        </div>
+    </div>
+    <script src="task3.js"></script>
+</body>
+
+</html>
