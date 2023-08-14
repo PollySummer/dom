@@ -1,12 +1,13 @@
-const inp = document.getElementsByTagName('input');
-const p = document.querySelector('.some-text');
-const bnt = document.querySelector('.send-text');
-let text = "";
-function send() {
-    for (let i = 0; i < inp.length; i++) {
-        text += inp[i].value;
-    }
-    p.innerText = text;
-}
+const input = document.querySelectorAll('.insert-text');
+const btn = document.querySelector('.show-text');
+const bgBody = document.querySelector('body');
 
-bnt.addEventListener('click', send);
+btn.addEventListener('click', function () {
+    for (let i = 0; i < input.length; i++) {
+        const text = document.createElement('p');
+        text.className = 'written-text';
+        text.innerText = input[i].value;
+        bgBody.append(text);
+        input.value = '';
+    }
+});
