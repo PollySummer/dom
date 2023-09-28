@@ -10,4 +10,4 @@ Just download project from my GitHub,
 install node.js and in console write *node task3.js** or use live server.
 
 ## Here you can add and delete your tasks
-![app][https://github.com/PollySummer/node-js-to-do-list/task3/images/app.png]
+![app](https://github.com/PollySummer/node-js-to-do-list/blob/master/task3/images/app.png)
