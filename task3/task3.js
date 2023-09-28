@@ -24,6 +24,13 @@ function deleteItem() {
 }
 deleteItem();
 
+function hideAll() {
+    for (let i = 0; i < listItems.length; i++) {
+        listItems[i].style.display = 'none';
+    }
+}
+deleteBtn.addEventListener('click', hideAll);
+
 function addItem() {
     const newLi = document.createElement('li');
     newLi.innerText = addField.value;
@@ -42,12 +49,7 @@ function addItem() {
             elemet.style.display = "none";
         });
     }
+    hideAll();
 }
 addBtn.addEventListener('click', addItem);
 
-function hideAll() {
-    for (let i = 0; i < listItems.length; i++) {
-        listItems[i].style.display = 'none';
-    }
-}
-deleteBtn.addEventListener('click', hideAll);
